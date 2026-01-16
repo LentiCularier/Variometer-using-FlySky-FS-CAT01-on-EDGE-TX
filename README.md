@@ -1,8 +1,9 @@
 Lua Function Script for EdgeTX.
 
 - Creates a telemetry sensor **Vspd** (m/s)
-- Based on telemetry sensor **Alt** (meters)
-- Can be used as Vario source in EdgeTX
+- Can be used as a Vario source in EdgeTX
+- Creates an additional telemetry sensor **Alt2** (meters)
+- **Alt2 is automatically zeroed when the script starts**
 - Optimized for low noise and low latency
 
 ## Installation
@@ -16,7 +17,7 @@ Bind the transmitter to a FlySky receiver with a FS-CAT01 sensor connected.
 
 On the Special Functions page, create the following entries (see screenshot):
 
-ON → Lua Script → FSvrio ✓
+[Any switch] → Lua Script → FSvrio ✓
 
 [Any switch] → Vario ✓
 
@@ -29,6 +30,9 @@ Scroll down on the Telemetry page and set Vario Source to “Vspd”.
 Set the Range to ±5 (recommended).
 
 Set the Center to approximately ±1.0.
+
+**Alt2 is automatically set to 0.0 m when the Lua script starts**
+
 
 If you encounter an error code when running the Lua script, try formatting the SD card using the official SD Card Formatter:
 https://www.sdcard.org/downloads/formatter/
