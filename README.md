@@ -31,7 +31,6 @@ Set the Range to ±5 (recommended).
 
 Set the Center to approximately ±1.0.
 
-**Alt2 is automatically set to 0.0 m when the Lua script starts**
 
 
 If you encounter an error code when running the Lua script, try formatting the SD card using the official SD Card Formatter:
